@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320px, height=570px, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Shuttle FTL</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <!-- Ruffle -->
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.RufflePlayer.config = {
+                "isActionScript3": true,
+                "frameRate": 30,
+                "splashScreen": false,
+                "backgroundColor": "#000000",
+                "autoplay": "on",
+            };
+            window.addEventListener("load", (event) => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                player.style.width = "320px";
+                player.style.height = "570px";
+                const container = document.getElementById("container");
+                container.appendChild(player);
+                player.load("https://khaleelmuhammad1998.github.io/ShuttleFTL/ShuttleFTL.swf");
+            });
+        </script>
+        <script src="https://khaleelmuhammad1998.github.io/ShuttleFTL/ruffle/ruffle.js"></script>
+    </main>
+</body>
+</html>
