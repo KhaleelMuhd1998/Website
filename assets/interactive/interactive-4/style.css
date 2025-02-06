@@ -1,0 +1,130 @@
+/* Font Faces. */
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro 55 Roman";
+    src: url("../../../assets/fonts/37eca625db586fe250cb8494b60fa092.eot");
+    src: url("../../../assets/fonts/37eca625db586fe250cb8494b60fa092.eot?#iefix")format("embedded-opentype"),
+        url("../../../assets/fonts/37eca625db586fe250cb8494b60fa092.woff")format("woff"),
+        url("../../../assets/fonts/37eca625db586fe250cb8494b60fa092.woff2")format("woff2"),
+        url("../../../assets/fonts/37eca625db586fe250cb8494b60fa092.ttf")format("truetype"),
+        url("../../../assets/fonts/37eca625db586fe250cb8494b60fa092.svg#Helvetica Neue LT Pro 55 Roman")format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Global Styles. */
+
+* {
+    font-family: "Helvetica Neue LT Pro 55 Roman", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Div. */
+
+/* Div - Collage */
+
+.div-collage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    background-color: #FFFFFFFF;
+    overflow: hidden;
+    text-align: center;
+}
+
+.div-collage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-wrap;
+    text-align: center;
+    opacity: 0.2;
+}
+
+/* Div - Background */
+
+.div-background {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    text-align: center;
+}
+
+/* Div - Foreground */
+
+.div-foreground {
+    width: 100%;
+    padding-top: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+@media (max-width: 768px) {
+    .div-foreground {
+        padding-top: 32px;
+    }
+}
+
+/* Span - Typeface 1 */
+
+.typeface-1 {
+    color: #80808040;
+    text-shadow: 0px 0px 0px #00000000;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    cursor: default;
+    transition: color 1s, text-shadow 2s;
+}
+
+.typeface-1:hover {
+    color: #808080FF;
+    text-shadow: 0px 0px 8px #80808080;
+}
+
+@media (max-width: 1600px) {
+    .typeface-1 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .typeface-1 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .typeface-1 {
+        font-size: 32px;
+    }
+}
+
+/* Img - Img-1 */
+
+.img-1 {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+}

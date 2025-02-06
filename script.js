@@ -1,6 +1,6 @@
 const ThemeSwitchButton = document.getElementById("theme-switch-button");
 ThemeSwitchButton.innerHTML = document.documentElement.getAttribute("data-theme") === "light" ? "🌙" : "☀️";
-const ThemeLocalStorageVariable = "WebsiteTheme.khaleelmuhammad1998";
+const ThemeLocalStorageVariable = "WebsiteTheme.khaleelmuhd1998";
 
 function setTheme(value) {
     document.documentElement.setAttribute("data-theme", value);
